@@ -22,6 +22,7 @@ from visualization.get_visualization import get_visualization
 
 service_logger.info(f"Is PyTorch using GPU: {torch.cuda.is_available()}")
 
+
 app = FastAPI()
 
 

@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
 import os
 import shutil
 
@@ -10,7 +14,9 @@ from PIL import Image
 from pdf2image import convert_from_path
 from pdf_features.PdfFeatures import PdfFeatures
 
-from src.configuration import IMAGES_ROOT_PATH, XMLS_PATH
+# from src.configuration import IMAGES_ROOT_PATH, XMLS_PATH
+from configuration import IMAGES_ROOT_PATH, XMLS_PATH
+
 
 
 class PdfImages:
